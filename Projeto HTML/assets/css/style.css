@@ -1,8 +1,16 @@
-h1 {
+.titulo {
     font-size: 35;
     color: blue;
 }
-h2 {
+.sub--1 {
     font-size: 20px;
     color: blueviolet;
+}
+.sub--2 {
+    font-size: 20px;
+    color: yellow;
+}
+.paragrafo {
+    font-size: 25px;
+    color: brown;
 }
