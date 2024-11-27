@@ -1,4 +1,7 @@
 Unidade de Medida
 
+Unidades absolutas
 px (pixel) - Resolução da tela
 pt pontos (1 polegada tem 72 pontos)
+
+Unidades relativas
