@@ -6,20 +6,11 @@
     <body>
         <h1>Formulário</h1><br>
 
-        <form action="/cadastro" enctype="multipart/form-data" method="get">
-
-            <input type="radio" name="cor" value="vermelho" id="vermelho" />
-            <label for="vermelho">VERMELHO</label>          
+        <form action="/cadastro" enctype="multipart/form-data" method="get">          
             
+            <label for="cor">Selecione a sua cor</label>
             <br/><br/>
-
-            <input type="radio" name="cor" value="amarelo" id="amarelo" />
-            <label for="amarelo">AMARELO</label>
-
-            <br/><br/>
-
-            <input type="radio" name="cor" value="preto" id="preto" />
-            <label for="preto">PRETO</label>
+            <input id="cor" type="color" name="cor" value="cor" />
 
             <br/><br/>
                                     
