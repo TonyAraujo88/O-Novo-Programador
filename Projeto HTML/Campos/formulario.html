@@ -8,13 +8,17 @@
 
         <form action="/cadastro" enctype="multipart/form-data" method="get">          
             
-            <label for="cor">Selecione a sua cor</label>
-            <br/><br/>
-            <input id="cor" type="color" name="cor" value="cor" />
-
-            <br/><br/>
-                                    
-             <input type="submit" value="enviar" />            
+            <select name="parcelas">
+                <option value="0">-- parcelas --</option>
+                <option value="1">R$ 1.000,00 - 1x sem juros</option>
+                <option selected value="2">R$ 500,00 - 2x sem juros</option>
+                <option value="3">R$ 333,33 - 3x sem juros</option>
+                <option value="4">R$ 250,00 - 4x sem juros</option>
+                <option value="5">R$ 260,00 - 5x com juros</option>                
+            </select>
+            
+            <br/><br/>    
+            <input type="submit" value="enviar" />            
         </form>
     </body>
 </html>
