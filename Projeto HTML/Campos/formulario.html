@@ -6,13 +6,15 @@
     <body>
         <h1>Formulário</h1><br>
 
-        <form action="/cadastro" enctype="multipart/form-data" method="get">
-
-            <input type="file" name="arquivo" />
+        <form action="/cadastro" method="get">
+            
+            <label>Defina o percentual de completude da sua tarefa</label>
+            <br/><br/>
+            <input type="range" name="percentual" min="0" max="100" value="0" />
 
             <br/><br/>
-                                    
-             <input type="submit" value="enviar" />            
+
+            <input type="submit" value="enviar" />            
         </form>
     </body>
 </html>
