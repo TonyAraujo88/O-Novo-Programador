@@ -22,4 +22,14 @@
 button {
     padding: 0px 16px;
     height: 36px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin: 21px 4px;
+    cursor: pointer;
+    border: 1px solid #f8f9fa;
+}
+
+button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 1px 1px rgb(0,0,0,.1);
 }
