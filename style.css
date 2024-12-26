@@ -1,12 +1,13 @@
 .todo {
     display: flex;
     flex-direction: row;
-    
+    background: cornflowerblue;   
 }
 
 .item {
-    padding: 20px;
+    padding: 10px;
     background: brown;
     color: white;
     margin: 10px;
+    flex: 2;
 }
