@@ -1,13 +1,15 @@
 .todo {
     display: flex;
     flex-direction: row;
-    background: cornflowerblue;   
+    justify-content: center;
+    background: cornflowerblue;
+     
 }
 
 .item {
-    padding: 10px;
+    padding: 20px;
     background: brown;
     color: white;
     margin: 10px;
-    flex: 2;
+    height: 100px;    
 }
