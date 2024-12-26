@@ -1,9 +1,9 @@
 .todo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background: cornflowerblue;
-     
+    height: 500px;
 }
 
 .item {
@@ -11,5 +11,5 @@
     background: brown;
     color: white;
     margin: 10px;
-    height: 100px;    
+    height: 20px;    
 }
