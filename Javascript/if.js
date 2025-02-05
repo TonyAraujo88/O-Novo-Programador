@@ -1,5 +1,5 @@
-const email = "contatoonovoprogramador.com"; 
-const senha = "senha123";
+const email = "financeiro@onovoprogramador.com"; 
+const senha = "123";
 
 
 // 1 sinal de = (igual) é atribuição, definindo algo.
@@ -11,9 +11,11 @@ const senha = "senha123";
 //no if > = MAIOR
 //no if < = MENOR
 
-if (email == "contatoonovoprogramador.com" || senha == "senha123") {
+if (email == "financeiro@onovoprogramador.com" || senha == "senha123") {
     //Fazer login do ususário
     console.log("Sim o e-mail e a senha estão corretos");
+} else {
+    
 }
 
 const prato = "vazio";
