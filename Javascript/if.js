@@ -15,7 +15,7 @@ if (email == "financeiro@onovoprogramador.com" || senha == "senha123") {
     //Fazer login do ususário
     console.log("Sim o e-mail e a senha estão corretos");
 } else {
-    
+    //Enviar mensagem de erro para o fronte!
 }
 
 const prato = "vazio";
@@ -36,8 +36,7 @@ if (numero1 == numero2) {
     console.log(numero1 + numero2);
 }
 
-const score_serasa = 600;
-
+const score_serasa = 800;
 
 if (score_serasa >= 600 && score_serasa <= 800) {
     console.log("Aprovado o financiamento Parabéns!");
