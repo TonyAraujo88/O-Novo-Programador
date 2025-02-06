@@ -1,6 +1,6 @@
 
 
-const opcao = 10
+const opcao = 30;
 
 switch (opcao) {
     case 10:
@@ -11,6 +11,8 @@ switch (opcao) {
     break;
     case 30:
         console.log("Pizza");
+    break;
 
-
+    default:
+        console.log("Produto não encontrado");
 }
