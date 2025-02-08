@@ -1,5 +1,3 @@
-
-
 const opcao = 30;
 
 switch (opcao) {
@@ -14,5 +12,20 @@ switch (opcao) {
     break;
 
     default:
-        console.log("Produto não encontrado");
+        console.log("Produto não encontrado!");
 }
+if(opcao === 10) {
+    console.log("Feijão");
+} else if(opcao === 20){
+    console.log("Carne");
+}
+
+    if(opcao === 10) {
+        console.log("Feijão");
+    } else if(opcao === 20) {
+        console.log("Carne");
+    } else if(opcao === 30) {
+        console.log("Pizza");
+    } else {
+        console.log("Produto não encontrado!");
+    }
