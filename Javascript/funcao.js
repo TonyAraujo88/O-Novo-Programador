@@ -1,10 +1,13 @@
 function garcom(prato, mesa) {
-    console.log("Entregar o prato para a mesa!", prato, mesa);
+    return `${prato} entregue na mesa ${mesa}`;
 }
 
-//garcom("carbonara", "10");
+//const retornoGarcom = garcom("carbonara", "10");
+
+//console.log(retornoGarcom);
 
 // A função só é executada quando eu a chamo
+//O return para a execução da função
 
 const email_correto = "contato@onovoprogramador.com";
 const senha_correta = "senhadificil123";
@@ -13,10 +16,12 @@ function login(email, senha) {
     //Verificar se e-mail e senha estão corretos!
 
     if (email === email_correto && senha === senha_correta) {
-        console.log("Login efetuado com sucesso!");
-    } else {
-        console.log("E-mail e/ou senha inválidos!");
-    }
+      return "Login efetuado com sucesso!";
+    } 
+      return "E-mail e/ou senha inválidos";
+    
 }
  
-login("contato@onovoprogramador.com", "senhadificil123");
+const resultadoLogin = login("contato@onovoprogramador.com", "senhadificil123");
+
+console.log(resultadoLogin);
