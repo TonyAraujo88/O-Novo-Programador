@@ -1,10 +1,9 @@
-const valorDolar = 5.3135;
-const valorEuro = 5.77;
+const vendasDoDia = [250, 800, 600, 200, 752, 2, 10, 30, 53, 71];
 
-const loteTransferenciasEmDolar = [100000, 20000, 5000, 60000, 77000, 550, 700000, 50000, 4, 300, 4000];
-
-const loteTransferenciasConvertidasEmReal = loteTransferenciasEmDolar.map((valor) => {
-    return valor * valorDolar;
+let total = 0;
+vendasDoDia.map((valorVenda) => {
+    console.log(total);
+    total = total + valorVenda;
 })
 
-console.log(loteTransferenciasConvertidasEmReal)
+console.log(total)
