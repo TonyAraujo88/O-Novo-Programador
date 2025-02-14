@@ -1,17 +1,10 @@
-const listaCompras = ["feijão", "arroz", "ovo"];
+const valorDolar = 5.3135;
+const valorEuro = 5.77;
 
-const receitadePao = ["farinha de trigo", "fermento biológico", "açucar", "leite", "ovo"];
+const loteTransferenciasEmDolar = [100000, 20000, 5000, 60000, 77000, 550, 700000, 50000, 4, 300, 4000];
 
-console.log(listaCompras)
-
-const numeros = [10, 80, 60, 80, 90];
-
-const resultadoEmDobro = numeros.map((numero) => {
-    return numero * 2;
+const loteTransferenciasConvertidasEmReal = loteTransferenciasEmDolar.map((valor) => {
+    return valor * valorDolar;
 })
 
-console.log(resultadoEmDobro)
-
-receitadePao.map((item) => {
-    document.write(item+", ")
-})
+console.log(loteTransferenciasConvertidasEmReal)
