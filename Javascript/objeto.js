@@ -1,15 +1,12 @@
-const pessoa = { nome: "Tony", senha: "123", qualificação: "ensino médio completo", idade:  36, religião: "cistão", nivel_de_acesso: "admin" };
+const pessoa = {
+    nome: "Vitor",
+    idade: 23,
+    interesses:["ciencia e tecnologia", "eletronicos"],
+    conjuge: {
+        nome: "Ana",
+        idade: 24,
+        interesses: ["maquiagem", "decoracao"]
+    }
+}
 
-
-document.write(pessoa.nome)
-document.write(pessoa.qualificação)
-document.write(pessoa.idade)
-document.write(pessoa.religião)
-document.write(pessoa.nivel_de_acesso)
-
-pessoa.email = "contato@onovoprogramador.com";
-pessoa.nome = "Ana";
-
-delete pessoa.senha
-
-console.log(pessoa)
+console.log(pessoa.conjuge.interesses)
