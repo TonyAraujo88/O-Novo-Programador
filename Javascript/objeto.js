@@ -9,4 +9,31 @@ const pessoa = {
     }
 }
 
-console.log(pessoa.conjuge.interesses)
+ const pessoas = [
+    {
+        nome: "Vitor",
+        idade: 23,
+        interesses:["ciencia e tecnologia", "eletronicos"],
+        conjuge: {
+            nome: "Ana",
+            idade: 24,
+            interesses: ["maquiagem", "decoracao"]
+        } 
+    },
+    {
+        nome: "Ana",
+        idade: 25,
+        interesses:["filosofia", "psicologia"],
+        conjuge: {
+            nome: "Vitor",
+            idade: 24,
+            interesses: ["ciencia e tecnologia", "eletronicos"]
+        }
+    },
+    ['teste']
+ ];
+
+ //Não se esquecer de colocar a avírgula
+
+console.log(pessoas[2])
+
