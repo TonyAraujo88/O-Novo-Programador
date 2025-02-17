@@ -35,5 +35,7 @@ const pessoa = {
 
  //Não se esquecer de colocar a avírgula
 
-console.log(pessoas[2])
+console.log(pessoas.find((item) => {
+    return item.nome === 'Ana';
+}))
 
