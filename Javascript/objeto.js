@@ -6,11 +6,10 @@ const pessoa = {
         nome: "Ana",
         idade: 24,
         interesses: ["maquiagem", "decoracao"]
-    },
-    saudacao : function () {
-        console.log('Olá, mundo!')
-    }
+    }   
 }
 
+//const copiaPessoa = Object.assign({}, pessoa);
+const copiaPessoa = { ...pessoa};
 
-pessoa.saudacao()
+console.log(copiaPessoa)
