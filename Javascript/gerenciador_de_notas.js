@@ -12,14 +12,21 @@ const gerenciadorDeNotas = {
 
     buscarNota: function(titulo) {
        return this.notas.find((nota) => nota.titulo.includes(titulo));
+    },
+
+    buscarNotas: function(titulo) {
+        return this.notas.filter((nota) => nota.titulo.includes(titulo));
     }
 }
 
-gerenciadorDeNotas.adicionarNota('Estudar 4 aulas por dia!', 'Módulo 2 de JS!');
-gerenciadorDeNotas.adicionarNota('Lembrar de tomar café antes da aula!', 'Você sempre deixa esfriar!');
-gerenciadorDeNotas.adicionarNota('Comprar novo teclado', 'Este está horrível');
+// filter -> retorna todos os que atenderem a condição solicitada 
 
-console.log(gerenciadorDeNotas.buscarNota('Estudar'));
+
+gerenciadorDeNotas.adicionarNota('Estudar 4 aulas por dia!', 'Módulo 2 de JS!');
+gerenciadorDeNotas.adicionarNota('Lembrar de tomar café antes das aulas!', 'Você sempre deixa esfriar!');
+gerenciadorDeNotas.adicionarNota('Comprar novo teclado para estudar as aulas', 'Este está horrível');
+
+console.log(gerenciadorDeNotas.buscarNotas('aulas'));
 
 
 
