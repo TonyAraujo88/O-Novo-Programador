@@ -12,5 +12,6 @@ const gerenciadorDeNotas = {
 }
 
 gerenciadorDeNotas.adicionarNota('Estudar 4 aulas por dia', 'Modulo 2 de JS!');
+gerenciadorDeNotas.adicionarNota('Lembrar de tomar café', 'Você sempre deixa esfriar!');
 
 console.log(gerenciadorDeNotas.notas)
