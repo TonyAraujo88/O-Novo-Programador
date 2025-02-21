@@ -11,15 +11,15 @@ const gerenciadorDeNotas = {
     },
 
     buscarNota: function(titulo) {
-       return this.notas.find((nota) => nota.titulo === titulo);
+       return this.notas.find((nota) => nota.titulo.includes(titulo));
     }
 }
 
 gerenciadorDeNotas.adicionarNota('Estudar 4 aulas por dia!', 'Módulo 2 de JS!');
-gerenciadorDeNotas.adicionarNota('Lembrar de tomar café!', 'Você sempre deixa esfriar!');
+gerenciadorDeNotas.adicionarNota('Lembrar de tomar café antes da aula!', 'Você sempre deixa esfriar!');
 gerenciadorDeNotas.adicionarNota('Comprar novo teclado', 'Este está horrível');
 
-console.log(gerenciadorDeNotas.buscarNota('Estudar 4 aulas por dia!'));
+console.log(gerenciadorDeNotas.buscarNota('Estudar'));
 
 
 
