@@ -13,11 +13,15 @@ const pessoa = {
     getIdade: function() {
         return this.idade;
     },
-    getNomeIdade: function() {
+    //A arrow function não acessa os escopos de fora.
+    getNomeEIdade: function() {       
         return `Meu nome é: ${this.getNome()} e minha idade é: ${this.getIdade()}!`
     }
 }
 
-console.log(pessoa.getNomeIdade());
+console.log(pessoa.getNomeEIdade());
 
 // this = este
+
+// function() {} = herda o escopo em que foi definida
+// () => {} = não herda o escopo em que foi definida, ela tem seu prórpio escopo
