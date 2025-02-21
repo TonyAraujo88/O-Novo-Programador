@@ -6,10 +6,18 @@ const pessoa = {
         nome: "Ana",
         idade: 24,
         interesses: ["maquiagem", "decoracao"]
-    }   
+    },
+    getNome: function() {
+        return this.nome;
+    },
+    getIdade: function() {
+        return this.idade;
+    },
+    getNomeIdade: function() {
+        return `Meu nome é: ${this.getNome()} e minha idade é: ${this.getIdade()}!`
+    }
 }
 
-//const copiaPessoa = Object.assign({}, pessoa);
-const copiaPessoa = { ...pessoa};
+console.log(pessoa.getNomeIdade());
 
-console.log(copiaPessoa)
+// this = este
