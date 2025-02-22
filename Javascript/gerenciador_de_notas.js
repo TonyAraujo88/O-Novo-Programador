@@ -3,11 +3,11 @@
 
 const gerenciadorDeNotas = {
     notas: [
-        { titulo: 'Levar o lixo', conteudo: 'A mulher já está brava!'}
+        { id: 1, titulo: 'Levar o lixo', conteudo: 'A mulher já está brava!'}
     ],
 
-    adicionarNota: function(tituloNovaNota, conteudoNovaNota) {
-        this.notas.push({ titulo: tituloNovaNota, conteudo: conteudoNovaNota});
+    adicionarNota: function(idNovaNota, tituloNovaNota, conteudoNovaNota) {
+        this.notas.push({ id: idNovaNota, titulo: tituloNovaNota, conteudo: conteudoNovaNota });
     },
 
     buscarNota: function(titulo) {
@@ -16,19 +16,29 @@ const gerenciadorDeNotas = {
 
     buscarNotas: function(titulo) {
         return this.notas.filter((nota) => nota.titulo.includes(titulo));
+    },
+    atualizarNota: function(id, tituloEditado, conteudoEditado                                                                     ) {
+        const posicao = this.notas.findIndex((nota) => nota.id === id);
+
+        if(!posicao < 0) {
+            return 'Nota não encontrada!';
+        }
+        gerenciadorDeNotas.notas[posicao] = {id: id, titulo: tituloEditado, conteudo: conteudoEditado };
+
+        return gerenciadorDeNotas.notas;
     }
 }
 
 // filter -> retorna todos os que atenderem a condição solicitada 
 
 
-gerenciadorDeNotas.adicionarNota('Estudar 4 aulas por dia!', 'Módulo 2 de JS!');
-gerenciadorDeNotas.adicionarNota('Lembrar de tomar café antes das aulas!', 'Você sempre deixa esfriar!');
-gerenciadorDeNotas.adicionarNota('Comprar novo teclado para estudar as aulas', 'Este está horrível');
+gerenciadorDeNotas.adicionarNota(2, 'Estudar 4 aulas por dia!', 'Módulo 2 de JS!');
+gerenciadorDeNotas.adicionarNota(3, 'Lembrar de tomar café antes das aulas!', 'Você sempre deixa esfriar!');
+gerenciadorDeNotas.adicionarNota(4, 'Comprar novo teclado para estudar as aulas', 'Este está horrível');
 
-console.log(gerenciadorDeNotas.buscarNotas('aulas'));
+gerenciadorDeNotas.atualizarNota(2, 'nota editada', 'contedo editado');
 
-
+console.log(gerenciadorDeNotas.atualizarNota(4, 'nota editada', 'contedo editado'));
 
 //console.log(gerenciadorDeNotas.notas)
 
