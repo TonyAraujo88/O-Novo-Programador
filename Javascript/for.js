@@ -5,8 +5,10 @@ const lista_compras = [
         "Farinha"
 ];
 
-console.log(lista_compras);
 
-lista_compras.map((item) => {
-    console.log(item)
-})
+
+for (let i = 0; i < lista_compras.length; i = i + 1 ) {
+    alert(lista_compras[i])
+} 
+
+
