@@ -5,10 +5,12 @@ const lista_compras = [
         "Farinha"
 ];
 
+lista_compras[2] = "batata";
+ console.log(lista_compras)
 
 
-for (let i = 0; i < lista_compras.length; i = i + 1 ) {
-    alert(lista_compras[i])
+for (let q = 0; q < lista_compras.length; q++) {
+    alert(lista_compras[q])
 } 
 
 
