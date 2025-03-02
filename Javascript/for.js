@@ -1,20 +1,16 @@
 const lista_compras = [
-        "Feijão",
-        "Arroz",
-        "Macarrão",
-        "Farinha"
+        { nome: 'Feijão', marca: 'TioJoao'},
+        { nome: 'Arroz', marca: 'KiArroz'}
 ];
 
 
-for(let chave in lista_compras) {
-    console.log(chave)
+for(let item of lista_compras) {
+    console.log(item.nome)
 }
 
-for(let item of lista_compras) {
-    console.log(item)
-}
 lista_compras.map((item) => {
-    
-}) 
+    console.log(item.nome)
+})
+
 
 
