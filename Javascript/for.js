@@ -6,11 +6,16 @@ const lista_compras = [
 ];
 
 lista_compras[2] = "batata";
- console.log(lista_compras)
+console.log(lista_compras)
 
+
+for ( let chave in lista_compras) {
+    console.log(chave)
+    console.log(lista_compras[chave]);
+}
 
 for (let q = 0; q < lista_compras.length; q++) {
-    alert(lista_compras[q])
+    
 } 
 
 
