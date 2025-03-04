@@ -32,4 +32,12 @@ const pedido = {
 
 const { numero, prato } = pedido;
 
-console.log(numero)
+//console.log(numero)
+
+
+const contato = ['Ana', 21988855858, 'Rio de Janeiro'];
+
+const [nomeContato, telefone, cidade] = contato;
+
+console.log(nomeContato, cidade)
+
