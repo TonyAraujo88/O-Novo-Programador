@@ -35,9 +35,35 @@ const { numero, prato } = pedido;
 //console.log(numero)
 
 
-const contato = ['Ana', 21988855858, 'Rio de Janeiro'];
+let ranking = [ 'João', 'Maria', 'Pedro'];
 
-const [nomeContato, telefone, cidade] = contato;
+[ranking[0], ranking[1],] = [ranking[1], ranking[0]];
 
-console.log(nomeContato, cidade)
+let manha = 'Carlos';
+let tarde = 'Ana';
+let noite = 'Felipe';
 
+[manha, tarde, noite] = [noite, manha, tarde]
+
+console.log(manha, tarde, noite)
+
+let posicaoy = 10;
+let posicaox = 20;
+
+[posicaoy, posicaox] = [posicaox, posicaoy];
+
+console.log(posicaoy, posicaox)
+
+let config = {
+    tema: 'claro',
+    fonte: 'pequena'
+};
+
+[config.tema, config.fonte] = ['escuro', 'médio'];
+
+console.log(config);
+
+let jogadores = ['Neymar', 'Messi', 'Cristiano'];
+let pontuacao = [90, 95, 88];
+
+//1. Troque 
