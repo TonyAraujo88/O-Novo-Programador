@@ -39,11 +39,11 @@ let ranking = [ 'João', 'Maria', 'Pedro'];
 
 [ranking[0], ranking[1],] = [ranking[1], ranking[0]];
 
-let manha = 'Carlos';
+let manha = ['Carlos', 'Fabio']
 let tarde = 'Ana';
 let noite = 'Felipe';
 
-[manha, tarde, noite] = [noite, manha, tarde]
+[manha[0], manha[1], tarde, noite] = [tarde, [''], noite, [manha[0], manha[1]]]
 
 console.log(manha, tarde, noite)
 
