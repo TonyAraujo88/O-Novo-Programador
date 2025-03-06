@@ -66,4 +66,11 @@ console.log(config);
 let jogadores = ['Neymar', 'Messi', 'Cristiano'];
 let pontuacao = [90, 95, 88];
 
-//1. Troque 
+[jogadores[0], jogadores[2]] = [jogadores[2], jogadores[0]];
+[pontuacao[0], pontuacao[2]] = [pontuacao[2], pontuacao[0]];
+
+console.log('Jogadores', jogadores);
+console.log('Pontuação:', pontuacao);
+//1. Troque a posição do primeiro e último jogador
+//2. Troque também suas respectivas pontuações
+//3. Imprima o relttado final
