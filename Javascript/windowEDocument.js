@@ -1,3 +1,4 @@
+// DOM => Document Object Model
 const dom = {
     window: {
         innerHeight: 400,
