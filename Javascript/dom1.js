@@ -1,6 +1,11 @@
 const titulo = document.getElementById('titulo'); 
 titulo.textContent = 'O Vitor é muito gente boa!';
-titulo.id = 'Vitor';
 
-const novoElementComIdNovo = document.getElementById('Vitor')
-console.log(novoElementComIdNovo)
+
+
+const elementosVerdes = document.getElementsByClassName('texto--verde')
+console.log(elementosVerdes)
+
+for(let i = 0; i < elementosVerdes.length; i++) {
+    elementosVerdes[i].style.color = 'blue';
+}
