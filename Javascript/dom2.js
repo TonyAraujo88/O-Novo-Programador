@@ -7,6 +7,6 @@ console.log(elemento)
 const mesmoElemento = document.querySelectorAll('#container');
 console.log(mesmoElemento)
 
-const paragrafo = document.querySelector('.paragrafo--bonito p');
-const 
+const paragrafo = document.querySelector('.paragrafo--bonito p b');
+
 console.log(paragrafo)
