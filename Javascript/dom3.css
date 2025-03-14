@@ -1,0 +1,15 @@
+.titulo {
+    font-size: 50px;
+}
+
+.tema--verde {
+    text-decoration: underline;
+    color: green;
+    font-weight: bold;
+}
+
+.tema--amarelo {
+    text-decoration: underline;
+    color: yellow;
+    font-weight: bold;
+}
