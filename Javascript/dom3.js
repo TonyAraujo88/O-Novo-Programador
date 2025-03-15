@@ -1,5 +1,12 @@
 const titulo = document.querySelector('.titulo');
 
-//titulo.setAttribute('class', 'titulo tema--amarelo')
+//titulo.setAttribute('class', 'titulo tema--amarelo');
+titulo.classList.remove('tema--verde');
+titulo.classList.add('tema--amarelo')
 
-titulo.innerHTML = '<div style="font-size: 50">Vitor legal</div>'
+const novoParagafo = document.createElement('p');
+novoParagafo.textContent = 'Lorem ipsum imaginario';
+document.body.appendChild(novoParagafo)
+
+document.querySelector('p').remove();
+
